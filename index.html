@@ -7137,8 +7137,7 @@ Hello World <br><br>
     "__2": ""
   }
 ]');
-var index = parseInt(url.searchParams.get('id'))-1;
-    
-    document.getElementById("id_holder").innerHTML = data[index]; 
+var index = parseInt(url.searchParams.get('id').substring(1))-1;
+document.getElementById("id_holder").innerHTML = data[index]; 
 
 </script>
